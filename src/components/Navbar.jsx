@@ -8,15 +8,9 @@ function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
 
   const location = useLocation();
+  console.log(location.pathname);
 
-  useEffect(() => {
-    let url = window.location.href.split("/");
-
-    let target = url[url.length - 1].toLowerCase();
-    let element = document.getElementById(target);
-    console.log(element);
-    element && element.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+ 
 
   useEffect(() => {
     setExpandNavbar(false);
@@ -34,7 +28,10 @@ function Navbar() {
         </button>
       </div>
       <div className="links">
-        <Linkk to="/" className="link">
+        <Linkk
+          to="/"
+          className={`link ${location.pathname === "/" ? "myactive" : ""}`}
+        >
           Home
         </Linkk>
         <Link
@@ -46,7 +43,10 @@ function Navbar() {
         >
           About
         </Link>
-        <Linkk to="/projects" className="link">
+        <Linkk
+          to="/projects"
+          className={`link ${location.pathname === "/projects" ? "myactive" : ""}`}
+        >
           Projects
         </Linkk>
         <Link
@@ -58,7 +58,7 @@ function Navbar() {
         >
           Contact
         </Link>
-        <Linkk to="/experience" className="link">
+        <Linkk to="/experience" className={`link ${location.pathname === '/experience'?"myactive":""}`}>
           Experience
         </Linkk>
       </div>

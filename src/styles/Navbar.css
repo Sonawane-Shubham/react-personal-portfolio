@@ -62,6 +62,12 @@
   text-align: center;
 }
 
+/* 
+active link */
+.myactive {
+ color: #e9d35b !important;
+}
+
 @media only screen and (max-width: 900px) {
   .navbar a {
     width: 70px;
