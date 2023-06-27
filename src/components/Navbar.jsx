@@ -40,7 +40,7 @@ function Navbar() {
         <Link
           to="about"
           smooth={true}
-          offset={40}
+          offset={25}
           duration={500}
           className="link"
         >
