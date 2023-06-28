@@ -21,11 +21,7 @@
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  .footer svg {
-    font-size: 45px;
-  }
-}
+
 @media only screen and (max-width: 440px) {
   .footer svg {
     font-size: 40px;
