@@ -8,9 +8,7 @@ function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
 
   const location = useLocation();
-  console.log(location.pathname);
-
- 
+  // console.log(location.pathname);
 
   useEffect(() => {
     setExpandNavbar(false);
@@ -45,7 +43,9 @@ function Navbar() {
         </Link>
         <Linkk
           to="/projects"
-          className={`link ${location.pathname === "/projects" ? "myactive" : ""}`}
+          className={`link ${
+            location.pathname === "/projects" ? "myactive" : ""
+          }`}
         >
           Projects
         </Linkk>
@@ -58,7 +58,12 @@ function Navbar() {
         >
           Contact
         </Link>
-        <Linkk to="/experience" className={`link ${location.pathname === '/experience'?"myactive":""}`}>
+        <Linkk
+          to="/experience"
+          className={`link ${
+            location.pathname === "/experience" ? "myactive" : ""
+          }`}
+        >
           Experience
         </Linkk>
       </div>
