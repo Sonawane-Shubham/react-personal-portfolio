@@ -222,8 +222,11 @@
   .about .prompt {
     margin-bottom: 50px;
   }
+   .prompt svg {
+    font-size: 45px;
+  }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 3650px) {
   .prompt svg {
     font-size: 40px;
   }
