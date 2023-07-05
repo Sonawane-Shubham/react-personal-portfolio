@@ -1,14 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function ProjectItem({ image, name, id }) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div className="projectItem">
       <div
-        onClick={() => {
-          navigate("/project/" + id);
-        }}
+        // onClick={() => {
+        //   navigate("/project/" + id);
+        // }}
         style={{ backgroundImage: `url(${image})` }}
         className="bgImage"
       />
