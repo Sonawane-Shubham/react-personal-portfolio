@@ -176,11 +176,11 @@
   .about .prompt {
     margin-top: 40px;
     margin-bottom: 120px;
-    font-size: 20px;
+    font-size: 25px;
     width: 80%;
   }
   .prompt svg {
-    font-size: 46px;
+    font-size: 50px;
   }
   .resume-download {
     margin-top: 70px;
@@ -226,8 +226,4 @@
     font-size: 45px;
   }
 }
-@media only screen and (max-width: 365px) {
-  .prompt svg {
-    font-size: 40px;
-  }
-}
+
