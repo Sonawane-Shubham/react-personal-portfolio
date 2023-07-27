@@ -4,7 +4,7 @@ import EmailIcon from "@material-ui/icons/Email";
 import { SiLeetcode, SiGithub } from "react-icons/si";
 
 import "../styles/Home.css";
-import { CloudDownload } from "@material-ui/icons";
+
 
 function Home() {
   return (
@@ -43,7 +43,7 @@ function Home() {
           >
             <SiLeetcode />
           </a>
-          <div className="resume-download">
+          {/* <div className="resume-download">
             <p className="download-label"></p>
             <a
               download
@@ -51,9 +51,9 @@ function Home() {
               title="download resume"
             >
               <CloudDownload className="resume-download-link" />
-              {/* <FaFileDownload/> */}
+           
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* //about me section */}
