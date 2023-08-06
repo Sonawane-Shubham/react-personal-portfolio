@@ -5,7 +5,6 @@ import { SiLeetcode, SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
 import "../styles/Home.css";
 
-
 function Home() {
   // const PVariants = {
   //   initial: { x: 2200 },
@@ -17,16 +16,17 @@ function Home() {
   //   },
   // };
 
-  const PV={
-     hidden:{ x: 2200 },
-      visible:{ x: 0,
-      transition:{
-              duration: 1,
-              delay: 0.3,
-              type: "spring",
-            }}
-            
-  }
+  const PV = {
+    hidden: { x: 2200 },
+    visible: {
+      x: 0,
+      transition: {
+        duration: 1,
+        delay: 0.3,
+        type: "spring",
+      },
+    },
+  };
   return (
     <div className="home">
       <div className="about">
@@ -41,9 +41,10 @@ function Home() {
           Hi, My Name is Shubham Sonawane
         </motion.h2>
         <div className="prompt">
-          <motion.p variants={PV}
-          initial="hidden"
-          animate="visible"
+          <motion.p
+            variants={PV}
+            initial="hidden"
+            animate="visible"
             // initial={{ x: 2200 }}
             // animate={{ x: 0}}
             // transition={{
@@ -76,15 +77,14 @@ function Home() {
           >
             <EmailIcon />
           </a>
-          
-            <a
-              href="https://leetcode.com/shubham_sonawane/"
-              target="_blank
+
+          <a
+            href="https://leetcode.com/shubham_sonawane/"
+            target="_blank
           "
-            >
-              <SiLeetcode />
-            </a>
-          
+          >
+            <SiLeetcode />
+          </a>
 
           {/* <div className="resume-download">
             <p className="download-label"></p>
@@ -101,7 +101,18 @@ function Home() {
       </div>
       {/* //about me section */}
       <div className="aboutme" name="about" id="about">
-        <h2 className="aboutme-heading"> About me</h2>
+        <motion.h2
+          className="aboutme-heading"
+          initial={{
+            opacity: 0,
+            scale: 0,
+            y: 150,
+          }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          About me
+        </motion.h2>
 
         <div className="aboutme-description">
           <p>
@@ -124,7 +135,17 @@ function Home() {
       </div>
       {/* //Skills */}
       <div className="skills">
-        <h1> Skills</h1>
+        <motion.h1
+          initial={{
+            opacity: 0,
+            scale: 0,
+            y: 150,
+          }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Skills
+        </motion.h1>
         <ol className="list">
           <li className="item">
             <h2> Front-End</h2>
@@ -148,7 +169,18 @@ function Home() {
 
       {/* //contactme */}
       <div className="contact-section" id="contactme">
-        <h2 className="contact-title">Contact Me</h2>
+        <motion.h2
+          className="contact-title"
+          initial={{
+            opacity: 0,
+            scale: 0,
+            y: 150,
+          }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Contact Me
+        </motion.h2>
         <h4 className="contact-subtitle">Get In Touch</h4>
         <div className="contact-container">
           <div className="contact-left">
