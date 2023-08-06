@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import "../styles/Navbar.css";
 import ReorderIcon from "@material-ui/icons/Reorder";
 
+
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
 
@@ -32,7 +33,7 @@ function Navbar() {
         >
           Home
         </Linkk>
-        <Link
+        <Linkk
           to="about"
           smooth={true}
           offset={25}
@@ -40,7 +41,7 @@ function Navbar() {
           className="link"
         >
           About
-        </Link>
+        </Linkk>
         <Linkk
           to="/projects"
           className={`link ${

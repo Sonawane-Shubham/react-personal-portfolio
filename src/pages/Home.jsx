@@ -2,17 +2,58 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import { SiLeetcode, SiGithub } from "react-icons/si";
-
+import { motion } from "framer-motion";
 import "../styles/Home.css";
 
 
 function Home() {
+  // const PVariants = {
+  //   initial: { x: 2200 },
+  //   animate: { x: 0 },
+  //   transition: {
+  //     duration: 1,
+  //     delay: 0.3,
+  //     type: "spring",
+  //   },
+  // };
+
+  const PV={
+     hidden:{ x: 2200 },
+      visible:{ x: 0,
+      transition:{
+              duration: 1,
+              delay: 0.3,
+              type: "spring",
+            }}
+            
+  }
   return (
     <div className="home">
       <div className="about">
-        <h2> Hi, My Name is Shubham Sonawane</h2>
+        <motion.h2
+          initial={{ y: 350 }}
+          animate={{ y: 0 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+          }}
+        >
+          Hi, My Name is Shubham Sonawane
+        </motion.h2>
         <div className="prompt">
-          <p>A software developer with a passion for learning and creating.</p>
+          <motion.p variants={PV}
+          initial="hidden"
+          animate="visible"
+            // initial={{ x: 2200 }}
+            // animate={{ x: 0}}
+            // transition={{
+            //   duration: 1,
+            //   delay: 0.3,
+            //   type: "spring",
+            // }}
+          >
+            A software developer with a passion for learning and creating.
+          </motion.p>
           <a
             href="https://github.com/Sonawane-Shubham"
             target="_blank
@@ -35,14 +76,16 @@ function Home() {
           >
             <EmailIcon />
           </a>
-
-          <a
-            href="https://leetcode.com/shubham_sonawane/"
-            target="_blank
+          
+            <a
+              href="https://leetcode.com/shubham_sonawane/"
+              target="_blank
           "
-          >
-            <SiLeetcode />
-          </a>
+            >
+              <SiLeetcode />
+            </a>
+          
+
           {/* <div className="resume-download">
             <p className="download-label"></p>
             <a
@@ -154,12 +197,8 @@ function Home() {
             ></textarea>
 
             <button type="submit" className="button">
-             
-              
               send
-             
             </button>
-
           </form>
         </div>
       </div>
