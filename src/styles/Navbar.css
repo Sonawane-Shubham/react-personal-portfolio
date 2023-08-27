@@ -20,10 +20,17 @@
   font-size: 25px;
 }
 .link {
-  transition: transform 0.4s;
+  transition: 0.4s;
+  transition-property: background-color, scale, traslateY();
+  padding: 7px 10px;
+  border-radius: 7px;
 }
 .link:hover {
-  transform: scale(1.1);
+  background-color: #344574;
+  transform: scale(1.5);
+  transform: translateY(5px);
+
+  color: black;
   cursor: pointer;
   color: #e9d35b;
 }
@@ -65,7 +72,7 @@
 /* 
 active link */
 .myactive {
- color: #e9d35b !important;
+  color: #e9d35b !important;
 }
 
 @media only screen and (max-width: 900px) {

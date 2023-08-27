@@ -40,10 +40,15 @@
   margin-bottom: 10px;
   font-size: 30px;
 }
+
 .prompt svg {
   font-size: 55px;
   margin: 5px;
   color: white;
+  transition: 0.4s;
+}
+.prompt svg:hover{
+transform: scale(1.4);
 }
 .resume-download-link {
   transition: transform 1s;

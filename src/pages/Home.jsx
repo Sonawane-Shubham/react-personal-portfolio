@@ -3,6 +3,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import { SiLeetcode, SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "../styles/Home.css";
 
 function Home() {
@@ -55,36 +56,36 @@ function Home() {
           >
             A software developer with a passion for learning and creating.
           </motion.p>
-          <a
-            href="https://github.com/Sonawane-Shubham"
+          <Link
+            to="https://github.com/Sonawane-Shubham"
             target="_blank
           "
           >
             <SiGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/shubham-sonawane-77b749192/"
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/shubham-sonawane-77b749192/"
             target="_blank
           "
           >
             <LinkedInIcon />
-          </a>
+          </Link>
 
-          <a
-            href="mailto:shubhamsonawane1707@gmail.com"
+          <Link
+            to="mailto:shubhamsonawane1707@gmail.com"
             target="_blank
           "
           >
             <EmailIcon />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://leetcode.com/shubham_sonawane/"
             target="_blank
           "
           >
             <SiLeetcode />
-          </a>
+          </Link>
 
           {/* <div className="resume-download">
             <p className="download-label"></p>
