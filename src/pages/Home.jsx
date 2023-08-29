@@ -150,20 +150,15 @@ function Home() {
         <ol className="list">
           <li className="item">
             <h2> Front-End</h2>
-            <span>
-              ReactJS, Angular, Redux, HTML, CSS NPM, BootStrap, MaterialUI,
-              Yarn, TailwindCSS.
-            </span>
+            <span>ReactJS Redux, HTML, CSS NPM, BootStrap, Yarn .</span>
           </li>
           <li className="item">
             <h2>Back-End</h2>
-            <span>
-              NodeJS ExpressJS, REST API, ApolloServer, MySQL, MongoDB, MS SQL
-            </span>
+            <span>NodeJS ExpressJS, REST API MySQL, MongoDB</span>
           </li>
           <li className="item">
             <h2>Languages</h2>
-            <span>JavaScript, Java, C, C++ ,TypeScript</span>
+            <span>JavaScript, Java, C, C++ </span>
           </li>
         </ol>
       </div>
