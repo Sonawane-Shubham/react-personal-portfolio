@@ -5,6 +5,7 @@ import { SiLeetcode, SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
+import heroimage from "../assets/heroimage.png";
 
 function Home() {
   // const PVariants = {
@@ -30,64 +31,81 @@ function Home() {
   };
   return (
     <div className="home">
-      <div className="about">
-        <motion.h2
-          initial={{ y: 350 }}
-          animate={{ y: 0 }}
-          transition={{
-            duration: 1,
-            type: "spring",
-          }}
-        >
-          Hi, My Name is Shubham Sonawane
-        </motion.h2>
-        <div className="prompt">
-          <motion.p
-            variants={PV}
-            initial="hidden"
-            animate="visible"
-            // initial={{ x: 2200 }}
-            // animate={{ x: 0}}
-            // transition={{
-            //   duration: 1,
-            //   delay: 0.3,
-            //   type: "spring",
-            // }}
+      <div className="main">
+        <div className="about">
+          <motion.h2
+            initial={{ y: 350 }}
+            animate={{ y: 0 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+            }}
           >
-            A software developer with a passion for learning and creating.
-          </motion.p>
-          <Link
-            to="https://github.com/Sonawane-Shubham"
-            target="_blank
+            --hello <br />
+            I'm Shubham Sonawane
+          </motion.h2>
+          <motion.h3
+            initial={{ y: 350 }}
+            animate={{ y: 0 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+            }}
+          >
+            Fullstack Developer
+          </motion.h3>
+          <div className="prompt">
+            <motion.p
+              variants={PV}
+              initial="hidden"
+              animate="visible"
+              // initial={{ x: 2200 }}
+              // animate={{ x: 0}}
+              // transition={{
+              //   duration: 1,
+              //   delay: 0.3,
+              //   type: "spring",
+              // }}
+            >
+              A software developer with a passion for learning and creating.dj
+              sdjslj sfdjsdl sf ls software developer with a passion for
+              learning and creating.
+            </motion.p>
+            <Link
+              to="https://github.com/Sonawane-Shubham"
+              target="_blank
           "
-          >
-            <SiGithub />
-          </Link>
-          <Link
-            to="https://www.linkedin.com/in/shubham-sonawane-77b749192/"
-            target="_blank
+            >
+              <SiGithub />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/shubham-sonawane-77b749192/"
+              target="_blank
           "
-          >
-            <LinkedInIcon />
-          </Link>
+            >
+              <LinkedInIcon />
+            </Link>
 
-          <Link
-            to="mailto:shubhamsonawane1707@gmail.com"
-            target="_blank
+            <Link
+              to="mailto:shubhamsonawane1707@gmail.com"
+              target="_blank
           "
-          >
-            <EmailIcon />
-          </Link>
+            >
+              <EmailIcon />
+            </Link>
 
-          <Link
-            href="https://leetcode.com/shubham_sonawane/"
-            target="_blank
+            <Link
+              href="https://leetcode.com/shubham_sonawane/"
+              target="_blank
           "
-          >
-            <SiLeetcode />
-          </Link>
+            >
+              <SiLeetcode />
+            </Link>
+            <div className="resume-section">
+              <button className="resume-btn">Download Resume</button>
+            </div>
 
-          {/* <div className="resume-download">
+            {/* <div className="resume-download">
             <p className="download-label"></p>
             <a
               download
@@ -98,8 +116,15 @@ function Home() {
            
             </a>
           </div> */}
+          </div>
+        </div>
+        <div className="hero-img" id="hero-img1">
+          <div className="hero-img-container">
+            <img src={heroimage} alt="" />
+          </div>
         </div>
       </div>
+
       {/* //about me section */}
       <div className="aboutme" name="about" id="about">
         <motion.h2
