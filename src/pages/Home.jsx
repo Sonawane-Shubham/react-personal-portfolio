@@ -29,6 +29,7 @@ function Home() {
       },
     },
   };
+ 
   return (
     <div className="home">
       <div className="main">
@@ -41,7 +42,7 @@ function Home() {
               type: "spring",
             }}
           >
-            --hello <br />
+            __ hello <br />
             I'm Shubham Sonawane
           </motion.h2>
           <motion.h3
@@ -102,7 +103,17 @@ function Home() {
               <SiLeetcode />
             </Link>
             <div className="resume-section">
-              <button className="resume-btn">Download Resume</button>
+              {/* <button className="resume-btn">Download Resume</button> */}
+              <a
+
+              download
+              href="/Shubham_Sonawane_Resume.pdf"
+              title="download resume"
+              className="resume-btn"
+            >
+              Download Resume
+              </a>
+              
             </div>
 
             {/* <div className="resume-download">
@@ -142,7 +153,7 @@ function Home() {
 
         <div className="aboutme-description">
           <p>
-            I'm A Final year CSE undergrad at BATU university. I have built
+             I'm A Final year CSE undergrad at BATU university. I have built
             Full-stack Applications. I've a good grasp of Data structures &
             Algorithms, I practicize on Leetcode(Solved 300+ problems). I am
             well versed with Computer Science fundamentals like OOPS, Operating
@@ -155,9 +166,9 @@ function Home() {
             engineering domain.
           </p>
         </div>
-        <a download href="/Shubham_Sonawane_Resume.pdf">
+        {/* <a download href="/Shubham_Sonawane_Resume.pdf">
           Download Resume
-        </a>
+        </a> */}
       </div>
       {/* //Skills */}
       <div className="skills">
