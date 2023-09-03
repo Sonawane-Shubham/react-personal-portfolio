@@ -88,7 +88,7 @@
 }
 
 .prompt .resume-section a:hover {
-  box-shadow: -3px 1px 15px 3px #506C97;
+  box-shadow: -3px 1px 15px 3px #506c97;
   cursor: pointer;
 }
 /* heroimag csss */
@@ -141,7 +141,7 @@
 }
 .aboutme-description {
   width: 85%;
-  text-align:center;
+  text-align: center;
   font-size: 25px;
 }
 
@@ -317,6 +317,13 @@
     text-align: center;
   }
 }
+
+@media screen and (max-height: 750px) {
+  .hero-img img {
+    margin-top: 120px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .about h2 {
     font-size: 28px;
