@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import heroimage from "../assets/heroimage.png";
+import Projects from "./Projects";
 
 function Home() {
   // const PVariants = {
@@ -198,6 +199,9 @@ function Home() {
           </li>
         </ol>
       </div>
+
+      {/* project section */}
+      <Projects/>
 
       {/* //contactme */}
       <div className="contact-section" id="contactme">
