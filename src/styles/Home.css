@@ -15,8 +15,8 @@
 }
 
 .about {
-  width: 50%;
-  height: calc(100vh - 100px);
+  width: 60%;
+  height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@
 
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 40px;
+  font-size: 33px;
   color: #506c97;
   margin: 5px 0px;
 
@@ -53,7 +53,7 @@
 }
 .prompt p {
   margin: 5px 0px;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .prompt svg {
@@ -88,13 +88,13 @@
 }
 
 .prompt .resume-section a:hover {
-  box-shadow: -3px 1px 15px 3px black;
+  box-shadow: -3px 1px 15px 3px #506C97;
   cursor: pointer;
 }
 /* heroimag csss */
 .hero-img {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 .hero-img img {
@@ -141,8 +141,8 @@
 }
 .aboutme-description {
   width: 85%;
-  text-align: justify;
-  font-size: 30px;
+  text-align:center;
+  font-size: 25px;
 }
 
 .skills {
@@ -242,7 +242,8 @@
   }
 
   .aboutme-description {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .skills {
@@ -283,16 +284,52 @@
     font-size: 33px;
   }
 }
-@media only screen and (min-width: 650px) {
-  .about {
-    justify-content: center;
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
   }
-}
-@media only screen and (max-width: 385px) {
+  .about {
+    width: 90%;
+    align-items: center;
+    height: calc(100vh - 450px);
+    margin-top: 100px;
+    margin-left: 0;
+    justify-content: start;
+    text-align: center;
+  }
+  .about h2 {
+    font-size: 28px;
+  }
   .about .prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 50px;
+    margin-top: 30px;
+    width: 100%;
   }
   .prompt svg {
-    font-size: 45px;
+    font-size: 48px;
+  }
+  .prompt p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about h2 {
+    font-size: 28px;
+  }
+  .about h3 {
+    font-size: 18px;
+  }
+  .about {
+    text-align: center;
+    height: calc(100vh - 360px);
+    margin-top: 40px;
+  }
+  .prompt p {
+    text-align: center;
   }
 }

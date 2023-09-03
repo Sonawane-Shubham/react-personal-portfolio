@@ -41,9 +41,16 @@ function Home() {
             transition={{
               duration: 1,
               type: "spring",
+            }}>__ hello</motion.h2>
+          <motion.h2
+            initial={{ y: 350 }}
+            animate={{ y: 0 }}
+            transition={{
+              duration: 1,
+              type: "spring",
             }}
           >
-            __ hello <br />
+          
             I'm Shubham Sonawane
           </motion.h2>
           <motion.h3
@@ -73,48 +80,48 @@ function Home() {
               sdjslj sfdjsdl sf ls software developer with a passion for
               learning and creating.
             </motion.p>
-            <Link
-              to="https://github.com/Sonawane-Shubham"
-              target="_blank
+            <div className="social-icon">
+              <Link
+                to="https://github.com/Sonawane-Shubham"
+                target="_blank
           "
-            >
-              <SiGithub />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/in/shubham-sonawane-77b749192/"
-              target="_blank
+              >
+                <SiGithub />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/shubham-sonawane-77b749192/"
+                target="_blank
           "
-            >
-              <LinkedInIcon />
-            </Link>
+              >
+                <LinkedInIcon />
+              </Link>
 
-            <Link
-              to="mailto:shubhamsonawane1707@gmail.com"
-              target="_blank
+              <Link
+                to="mailto:shubhamsonawane1707@gmail.com"
+                target="_blank
           "
-            >
-              <EmailIcon />
-            </Link>
+              >
+                <EmailIcon />
+              </Link>
 
-            <Link
-              href="https://leetcode.com/shubham_sonawane/"
-              target="_blank
+              <Link
+                href="https://leetcode.com/shubham_sonawane/"
+                target="_blank
           "
-            >
-              <SiLeetcode />
-            </Link>
+              >
+                <SiLeetcode />
+              </Link>
+            </div>
             <div className="resume-section">
               {/* <button className="resume-btn">Download Resume</button> */}
               <a
-
-              download
-              href="/Shubham_Sonawane_Resume.pdf"
-              title="download resume"
-              className="resume-btn"
-            >
-              Download Resume
+                download
+                href="/Shubham_Sonawane_Resume.pdf"
+                title="download resume"
+                className="resume-btn"
+              >
+                Download Resume
               </a>
-              
             </div>
 
             {/* <div className="resume-download">
@@ -154,7 +161,7 @@ function Home() {
 
         <div className="aboutme-description">
           <p>
-             I'm A Final year CSE undergrad at BATU university. I have built
+            I'm A Final year CSE undergrad at BATU university. I have built
             Full-stack Applications. I've a good grasp of Data structures &
             Algorithms, I practicize on Leetcode(Solved 300+ problems). I am
             well versed with Computer Science fundamentals like OOPS, Operating
@@ -201,7 +208,7 @@ function Home() {
       </div>
 
       {/* project section */}
-      <Projects/>
+      <Projects />
 
       {/* //contactme */}
       <div className="contact-section" id="contactme">

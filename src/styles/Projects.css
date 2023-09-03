@@ -5,6 +5,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
+}
+.projects h1{
+  font-size: 50px;
+  text-align: center;
 }
 .projects .projectTitle {
   text-align: center;
