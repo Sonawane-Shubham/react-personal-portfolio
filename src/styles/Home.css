@@ -79,7 +79,7 @@
   color: #506c97;
   border: none;
   font-weight: 600;
-  box-shadow: -3px 1px 15px 1px black;
+  box-shadow:-3px 1px 15px 4px #506c97;
   transition: 0.5s ease;
   text-decoration: none;
 }
@@ -88,7 +88,7 @@
 }
 
 .prompt .resume-section a:hover {
-  box-shadow: -3px 1px 15px 3px #506c97;
+  box-shadow: -3px 1px 15px 3px black;
   cursor: pointer;
 }
 /* heroimag csss */
@@ -318,7 +318,7 @@
   }
 }
 
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 750px) and (max-width: 600px){
   .hero-img img {
     margin-top: 120px;
   }
