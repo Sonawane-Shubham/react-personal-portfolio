@@ -30,7 +30,7 @@ function Home() {
       },
     },
   };
- 
+
   return (
     <div className="home">
       <div className="main">
@@ -41,7 +41,10 @@ function Home() {
             transition={{
               duration: 1,
               type: "spring",
-            }}>__ hello</motion.h2>
+            }}
+          >
+            __ hello
+          </motion.h2>
           <motion.h2
             initial={{ y: 350 }}
             animate={{ y: 0 }}
@@ -50,7 +53,6 @@ function Home() {
               type: "spring",
             }}
           >
-          
             I'm Shubham Sonawane
           </motion.h2>
           <motion.h3
@@ -76,9 +78,8 @@ function Home() {
               //   type: "spring",
               // }}
             >
-              A software developer with a passion for learning and creating.dj
-              sdjslj sfdjsdl sf ls software developer with a passion for
-              learning and creating.
+              A software developer with a passion for learning and creating
+              ,software developer with a passion for learning and creating.
             </motion.p>
             <div className="social-icon">
               <Link
@@ -194,11 +195,11 @@ function Home() {
         <ol className="list">
           <li className="item">
             <h2> Front-End</h2>
-            <span>ReactJS Redux, HTML, CSS NPM, BootStrap, Yarn .</span>
+            <span>HTML, CSS,JS,ReactJS,Redux,NPM, BootStrap, Yarn .</span>
           </li>
           <li className="item">
             <h2>Back-End</h2>
-            <span>NodeJS ExpressJS, REST API MySQL, MongoDB</span>
+            <span>NodeJS, ExpressJS, REST API MySQL, MongoDB</span>
           </li>
           <li className="item">
             <h2>Languages</h2>
@@ -247,7 +248,7 @@ function Home() {
               <i className="uil uil-map-marker contact_icon"></i>
               <div>
                 <h3 className="contact_title">Location</h3>
-                <span className="contact_subtitle">Ch. Sambhajinagar</span>
+                <span className="contact_subtitle">Aurangabad</span>
               </div>
             </div>
           </div>
